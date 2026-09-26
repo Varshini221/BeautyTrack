@@ -30,8 +30,9 @@
 
             <select id="service">
                 <option value="">Choose a service</option>
-                <option value="waxing">Waxing</option>
-                <option value="nails">Nails</option>
+                <option value="beauty_salon">Waxing</option>
+                <option value="nail_salon">Nails</option>
+                <option value="hair_salon">Hair</option>
             </select>
 
 
@@ -44,14 +45,14 @@
             </select>
 
 
-            <button id="search-businesses">Search</button>
+            <button id="search-businesses" onclick="showPlaces()">Search</button>
         </section>
 
 
         <section id="businesses">
 
             <h3>Nearby Businesses</h3>
-
+            <div id="nearby-businesses"></div>
             <!-- Businesses will be added here with JavaScript -->
 
         </section>
@@ -64,7 +65,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="discover.js"></script>
 
 </body>
 </html>

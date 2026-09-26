@@ -177,16 +177,16 @@ select:focus {
 }
 
 .appointment-card {
-  background: #FDF8F5;
-  border-left: 3px solid #E8A0B0;
-  border-radius: 12px;
-  padding: 1rem 1.2rem;
-  margin-bottom: 0.75rem;
-  box-shadow: 0 2px 10px rgba(107, 75, 94, 0.06);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .appointment-card:last-child {
@@ -234,6 +234,21 @@ select:focus {
 
 .appointment-card .actions button.danger:hover {
   background: #FFD0DA;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ccc;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #e57373;
 }
 
 #past-appointments .appointment-card {
